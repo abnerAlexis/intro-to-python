@@ -36,21 +36,21 @@ def main_menu():
 
     while True:
         print_menu()
-        choice = get_user_choice()
+        selection = get_user_selection()
 
-        if choice in menu_options:
+        if selection in menu_options:
             try:
-                menu_options[choice](conn, cursor)
+                menu_options[selection](conn, cursor)
             except Exception as e:
                 print(f"Error: {e}")
-        elif choice == '5':
+        elif selection == '5':
             print("Exiting...")
             conn.commit()
             cursor.close()
             conn.close()
             break
         else:
-            # print("Invalid choice, please try again.")
+            # print("Invalid entry, please try again.")
             cursor.execute("DESCRIBE Recipes")
 
 
@@ -63,8 +63,8 @@ def print_menu():
     print("5. Exit")
 
 
-def get_user_choice():
-    return input("Enter your choice (1-5): ")
+def get_user_selection():
+    return input("Enter a number (1-5): ")
 
 
 def calc_difficulty(cook_time, ingredients):
@@ -146,8 +146,8 @@ def search_recipe(conn, cursor):
     for i, ingredient in enumerate(sorted(all_ingredients), start=1):
         print(f"{i}. {ingredient}")
 
-    choice = int(input("Choose an ingredient by number to search: ")) - 1
-    search_ingredient = sorted(all_ingredients)[choice]
+    selection = int(input("Enter the number of an ingredient to search: ")) - 1
+    search_ingredient = sorted(all_ingredients)[selection]
 
     search_query = "SELECT * FROM Recipes WHERE ingredients LIKE %s"
     cursor.execute(search_query, ('%' + search_ingredient + '%',))
