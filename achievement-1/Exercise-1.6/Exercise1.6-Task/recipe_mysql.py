@@ -222,7 +222,7 @@ def update_ingredients(cursor, recipe_id):
      # If the column to update is 'ingredients', prompt the user for the new ingredients
     new_value = input("Enter the new ingredients (comma-separated): ")
     
-    # Sanitize the new ingredients input (formatting function assumed to exist)
+    # format the new ingredients input 
     formatted_ingredients = format_ingredients(new_value)
     
     # Update the ingredients in the Recipes table where the ID matches the recipe_id
