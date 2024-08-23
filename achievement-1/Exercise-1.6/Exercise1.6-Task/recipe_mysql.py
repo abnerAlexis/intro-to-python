@@ -83,7 +83,7 @@ def calc_difficulty(cook_time, ingredients):
     
 
 def format_ingredients(ingredients):
-    # stripp any leading or trailing whitespace from each ingredient and excluding any empty strings
+    # strip any leading or trailing whitespace from each ingredient and excluding any empty strings
     return ', '.join(ingredient.strip() for ingredient in ingredients.split(',') if ingredient.strip())
 
 
