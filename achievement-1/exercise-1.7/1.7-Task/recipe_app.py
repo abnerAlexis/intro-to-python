@@ -222,9 +222,9 @@ def select_recipe(recipes):
     for recipe_id, recipe_name in results.items():
         print(f"{recipe_id} - {recipe_name}")
 
-    selected_id = input("Enter the ID of the recipe you'd like to edit: ")
+    selected_id = input("Enter the number by the recipe you'd like to edit: ")
     if not selected_id.isdigit() or int(selected_id) not in results:
-        print("Invalid ID selected. Exiting edit function.")
+        print("Invalid number selected. Exiting edit function.")
         return None
 
     return int(selected_id)
