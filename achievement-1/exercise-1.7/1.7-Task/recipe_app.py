@@ -1,9 +1,12 @@
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
 
 engine = create_engine("mysql://cf-python:beren@localhost/task_database")
 
 Base = declarative_base()
+Session = sessionmaker(bind=engine)
+session = Session()
 
 class Recipe(Base):
     # Recipe (what can also be called a data model or a model), stores the representation 
