@@ -1,0 +1,15 @@
+Updates to models.py
+
+I have updated recipes/models.py to include a new pic field. 
+Adding this visual element enhances the application's interface 
+and significantly improves the overall user experience by providing 
+a richer, more engaging presentation.
+
+
+Frontend inspirations
+Since the day I started my CF journey I’ve been actively engaging
+ with the materials recommended by my tutors and mentors. This has 
+ been incredibly helpful in completing my tasks. For this project, 
+ I applied my understanding of color harmony and made sure to utilize 
+ white space effectively in the right areas to create a clean and 
+ organized layout.
