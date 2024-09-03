@@ -1,0 +1,54 @@
+Q - Take some time to think of what you want users to search for, the criterion 
+for search, and format of output.
+
+A - I've made significant progress on my recipe app by successfully implementing 
+several key features. One of the highlights is a robust search functionality that 
+allows users to find recipes by ingredient. After clicking the 'Search' button, a 
+table displaying the relevant recipes is generated, along with a data analysis 
+feature that visualizes the results using a chart of the user's choice.
+
+In addition, I’ve developed a user registration feature, enabling new users to 
+sign up and access the app's full range of capabilities. Despite the challenges, 
+these accomplishments mark a major step forward in the app's development.
+
+Q - Think of the user’s journey from the moment they land on the homepage, 
+considering all the different navigation possibilities and search options.
+For example, a user lands on the homepage, logs in to the account, searches 
+for a recipe based on a recent date, sees the plots, checks details, and 
+then logs out. Represent this journey as a flow chart.
+
+A - Execution Flow:
+The user arrives at the homepage.
+The user selects either the 'Login' or 'Register' option.
+If logging in, the user enters their username and password. If registering, 
+they provide their username, email, password, and confirm the password.
+Upon successful authentication or registration, the user is directed to the 
+recipe list.
+The user clicks on a specific recipe to view its details.
+After reviewing the recipe, the user returns to the recipe list.
+The user navigates to the search feature.
+The user searches for recipes by entering an ingredient.
+The user is presented with a table of recipes that match the entered ingredient and can view the selected charts.
+Finally, the user logs out.
+
+Q - At least one visualization using a bar, pie, and line chart (at least one for each). For each of the scenarios, identify the x- and y- axes and labels (if any). Also determine if you want charts to be displayed based on user input or simply to provide them at your own discretion.
+A - Search by Ingredient
+Data Analysis
+The charts will be dynamically updated based on the currently searched ingredient:
+
+Bar Graph
+
+Visualizes the most popular ingredients.
+X-Axis: Ingredients
+Y-Axis: Count of how many times each ingredient appears in recipes
+Pie Chart
+
+Displays the percentage contribution of each ingredient to the total recipes found.
+Each segment represents the proportion of recipes that include the respective ingredient.
+Line Chart
+
+Tracks the frequency of each ingredient's appearance in recipes over time.
+X-Axis: Ingredients
+Y-Axis: Count of how many times each ingredient appears in recipes
+    
+
